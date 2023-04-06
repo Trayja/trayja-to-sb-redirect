@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+  <title>Trayja is now Sortabase</title>
+  <meta
+    name="description"
+    content="This page redirects Trayja.com URLs to our new site at Sortabase.com"
+  />
+  <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      padding: 30vh 32px;
+    }
+  </style>
+  <script>
+    setTimeout(() => {
+      const currentUrl = window.location.href;
+      if (!currentUrl.toLowerCase().includes("trayja.com"))
+        window.location.href = "https://sortabase.com";
+      window.location.href = currentUrl.replace("trayja", "sortabase");
+    }, 5000);
+  </script>
+</head>
+<body>
+  <h1>You are being redirected to our new site</h1>
+  <p>
+    If you are not redirected within 5 seconds,
+    <a href="https://sortabase.com">click here</a>
+  </p>
+</body>
